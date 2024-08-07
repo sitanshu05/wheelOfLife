@@ -117,9 +117,10 @@ const Wheel: React.FC = () => {
       </div>
  
       <div className='w-full flex justify-end mt-5'>
-        {!id && <button className='bg-darkest_almond text-xl p-3 rounded-lg mr-5 px-5'
-        onClick={handleWheelSubmit}
+        {<button className='bg-darkest_almond text-xl p-3 rounded-lg mr-5 px-5 text-almond'
+        onClick={localStorage.getItem("Authorization") ? handleWheelSubmit : ()=>{navigate("/login")}}
         >Save</button>}
+
       </div>
     </>
   );

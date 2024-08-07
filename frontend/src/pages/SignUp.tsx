@@ -34,8 +34,14 @@ const SignUp : React.FunctionComponent = () =>{
             email : signupForm.email,
             password : signupForm.password
         }).then((res)=>{
+            
             localStorage.setItem("Authorization", `Bearer ${res.data.token}`)
-            navigate("/allWheels")
+            if(localStorage.getItem("recoil-persist")){
+                navigate("/wheel")
+                
+            }else{
+                navigate("/allWheels")
+            }
         }).catch((err)=>{
             alert(err.response.data.message)
 
