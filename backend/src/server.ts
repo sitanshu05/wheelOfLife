@@ -11,7 +11,7 @@ app.use(cors())
 app.use("/api/v1",rootRouter);
 
 mongoose.connect(getConfig.MONGO_URL).then(()=>{
-    app.listen(getConfig.PORT,()=>{
-        console.log(`Listening on port ${getConfig.PORT} `)
+    app.listen(getConfig.PORT || 4000,()=>{
+        console.log(`Listening on port ${getConfig.PORT || 4000} `)
     })
 })

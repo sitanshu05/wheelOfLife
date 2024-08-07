@@ -19,7 +19,7 @@ interface Segment {
 
 const Wheel: React.FC = () => {
 
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const [segmentArray,setSegmentArray] = useState<Segment[]>([]);
   const recoilSegmentArray = useRecoilValue(segmentArraySelector);
   const navigate = useNavigate()
@@ -82,7 +82,7 @@ const Wheel: React.FC = () => {
   const adjustedBorderColors = borderColors.slice(0, segmentArray.length);
 
   async function handleWheelSubmit(event: any){
-    
+    event.preventDefault()
     await axios.post(`${config.SERVER_API_URL}/wheel/create`,{
       segments : recoilSegmentArray
     },{

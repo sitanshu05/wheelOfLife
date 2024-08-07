@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Hamburger from 'hamburger-react'
 import { useState } from "react";
 
@@ -29,11 +29,6 @@ const Nav = () => {
         )
     }
 
-
-    function toggleMenu(event : any) {
-        event.preventDefault();
-        setIsOpen(!isOpen);
-    }
     
     
     return(
