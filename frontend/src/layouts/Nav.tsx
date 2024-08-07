@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Hamburger from 'hamburger-react'
 import { useState } from "react";
 
@@ -9,8 +9,10 @@ const Nav = () => {
     const [isOpen,setIsOpen] = useState<boolean>(false);
 
     const logOut = () => {
+        const navigate = useNavigate();
         localStorage.removeItem("Authorization")
         window.location.reload()
+        navigate("/")
     }
 
     const NavLinks = () => {
