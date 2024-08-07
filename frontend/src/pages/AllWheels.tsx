@@ -10,6 +10,8 @@ const AllWheels = () => {
    
     const [wheels, setWheels] = useState([]);
     const navigate = useNavigate()
+    const monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
 
     useEffect(()=>{
 
@@ -70,10 +72,12 @@ const AllWheels = () => {
                 </div>
                 <div className="mt-2">
                     { wheels.length > 0 ? 
-                        wheels.map((item,idx)=>{
+                        wheels.map((item : any,idx)=>{
+
+                            const date = new Date(item.time);
                             return  (
                             <div className="mt-5" key={getIdArray(wheels)[idx]}>
-                                <WheelCard data={getRatingArray(item)} id={getIdArray(wheels)[idx]} />
+                                <WheelCard data={getRatingArray(item)} id={getIdArray(wheels)[idx]} month={`${monthNames[date.getMonth()]} ${date.getFullYear()}`} />
                             </div>
                             )
                         })

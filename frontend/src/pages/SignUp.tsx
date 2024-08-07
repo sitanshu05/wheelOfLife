@@ -28,7 +28,7 @@ const SignUp : React.FunctionComponent = () =>{
 
     const submitForm = (event : any)=>{
         event.preventDefault();
-        console.log(signupForm)
+
         axios.post(`${config.SERVER_API_URL}/auth/signup`,{
             username : signupForm.username,
             email : signupForm.email,
@@ -37,7 +37,6 @@ const SignUp : React.FunctionComponent = () =>{
             localStorage.setItem("Authorization", `Bearer ${res.data.token}`)
             navigate("/allWheels")
         }).catch((err)=>{
-            console.log(err)
             alert(err.response.data.message)
 
         })

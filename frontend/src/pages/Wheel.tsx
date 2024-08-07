@@ -91,6 +91,7 @@ const Wheel: React.FC = () => {
       }
     })
 
+    localStorage.removeItem("recoil-persist")
     navigate("/allwheels")
   }
 
