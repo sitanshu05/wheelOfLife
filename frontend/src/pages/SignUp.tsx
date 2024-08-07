@@ -34,7 +34,6 @@ const SignUp : React.FunctionComponent = () =>{
             email : signupForm.email,
             password : signupForm.password
         }).then((res)=>{
-            
             localStorage.setItem("Authorization", `Bearer ${res.data.token}`)
             if(localStorage.getItem("recoil-persist")){
                 navigate("/wheel")
