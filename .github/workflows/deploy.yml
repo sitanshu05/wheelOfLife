@@ -60,7 +60,7 @@ jobs:
                 tags: sitanshu02/wheeloflife-frontend:latest
 
             - name: Verify Pushed Frontend Image
-              run: wheeloflife-frontend:latest
+              run: docker pull sitanshu02/wheeloflife-frontend:latest
         
             - name: Verify Pushed Backend Image
               run: docker pull sitanshu02/wheeloflife-backend:latest
