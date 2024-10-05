@@ -7,7 +7,7 @@ import Lottie from "lottie-react"
 
 const Body : React.FunctionComponent = () => {
 
-    const content = "This is text about Body, more text about Body , some more text about Body"
+    const content = "Your vessel for life!Focus on physical health, fitness, self-care, are you ready to take on the world?"
 
     const [bodyValues, setBodyValues] = useRecoilState(bodyAtom);
 

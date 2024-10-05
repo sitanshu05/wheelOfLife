@@ -7,7 +7,7 @@ import Header from "../layouts/Header"
 
 const Soul : React.FunctionComponent = () => {
 
-    const content = "This is text about soul, more text about soul , some more text about soul"
+    const content = "Dive deep into your inner self! How do you connect with your soul? Focus on spirituality, self-reflection, and alignment with your core values, fostering a sense of peace and purpose in your life."
 
     const [soulValues, setSoulValues] = useRecoilState(soulAtom);
 

@@ -7,7 +7,7 @@ import Lottie from "lottie-react"
 
 const Friends : React.FunctionComponent = () => {
 
-    const content = "This is text about Friends, more text about Friends , some more text about Friends"
+    const content = "Celebrate your circle! Reflect on the quality and depth of your friendships, highlighting the importance of connection, support, and fun with those you hold dear."
 
     const [friendsValues, setFriendsValues] = useRecoilState(friendsAtom);
 

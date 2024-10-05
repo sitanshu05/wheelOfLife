@@ -7,7 +7,7 @@ import Lottie from "lottie-react"
 
 const Money : React.FunctionComponent = () => {
 
-    const content = "This is text about Money, more text about Money , some more text about Money"
+    const content = "Master your finances! Focus on your wallet, budgeting, and wealth management, ensuring you feel secure and empowered to achieve your financial goals."
 
     const [moneyValues, setMoneyValues] = useRecoilState(moneyAtom)
 

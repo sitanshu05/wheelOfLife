@@ -7,7 +7,7 @@ import Lottie from "lottie-react"
 
 const Mind : React.FunctionComponent = () => {
 
-    const content = "This is text about Mind, more text about Mind , some more text about Mind"
+    const content = "Feed your intellect! Focus on mental wellness, emotional resilience, and continuous learning, ensuring your mind is sharp, engaged, and thriving."
 
     const [mindValues, setMindValues] = useRecoilState(mindAtom);
 

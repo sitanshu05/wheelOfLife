@@ -7,7 +7,7 @@ import Lottie from "lottie-react"
 
 const Romance : React.FunctionComponent = () => {
 
-    const content = "This is text about Romance, more text about Romance , some more text about Romance"
+    const content = "Ignite the spark! Explore the depth of your romantic relationships, emphasizing love, connection, and passion in your partnerships to foster intimacy and joy."
 
     const [romanceValues, setRomanceValues] = useRecoilState(romanceAtom);
 

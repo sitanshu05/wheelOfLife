@@ -9,7 +9,7 @@ import { darkModeAtom } from "../data/atoms/darkModeAtom"
 
 const Joy : React.FunctionComponent = () => {
 
-    const content = "This is text about Joy, more text about Joy , some more text about Joy"
+    const content = "Seek happiness every day! Highlight the importance of cultivating joy and gratitude in your life, encouraging you to find delight in the small moments and cherish the beauty around you."
 
     const [joyValues, setJoyValues] = useRecoilState(joyAtom)
     const darkMode = useRecoilValue(darkModeAtom)

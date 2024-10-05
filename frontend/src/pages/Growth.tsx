@@ -9,7 +9,7 @@ import { darkModeAtom } from "../data/atoms/darkModeAtom"
 
 const Growth : React.FunctionComponent = () => {
 
-    const content = "This is text about Growth, more text about Growth , some more text about Growth"
+    const content = "Embrace the journey! Focuses on personal development, goal-setting, and self-improvement, pushing you to evolve and reach your full potential in life."
 
     const [growthValues, setGrowthValues] = useRecoilState(growthAtom)
     const darkMode = useRecoilValue(darkModeAtom);

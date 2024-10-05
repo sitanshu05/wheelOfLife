@@ -7,7 +7,7 @@ import Lottie from "lottie-react"
 
 const Mission : React.FunctionComponent = () => {
 
-    const content = "This is text about Mission, more text about Mission , some more text about Mission"
+    const content = "Your purpose in action! Take courage to define and pursue your life’s mission, align your actions with your values and contribute positively to the world around you."
 
     const [missionValues, setMissionValues] = useRecoilState(missionAtom)
 

@@ -7,7 +7,7 @@ import Lottie from "lottie-react"
 
 const Family : React.FunctionComponent = () => {
 
-    const content = "This is text about Family, more text about Family , some more text about Family"
+    const content = "The ties that bind! Evaluate your family relationships, emphasizing the love, support, and connection you share with your loved ones, creating a foundation for your life."
 
     const [familyValues, setFamilyValues] = useRecoilState(familyAtom)
 
