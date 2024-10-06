@@ -90,18 +90,25 @@ const Wheel: React.FC = () => {
 
   async function handleWheelSubmit(event: any){
     event.preventDefault()
-    setLoading(true)
-    await axios.post(`${config.SERVER_API_URL}/wheel/create`,{
-      segments : recoilSegmentArray
-    },{
-      headers : {
-        Authorization : localStorage.getItem("Authorization")
-      }
-    })
 
-    localStorage.removeItem("recoil-persist")
-    setLoading(false);
-    navigate("/allwheels")
+    try{
+      setLoading(true)
+      await axios.post(`${config.SERVER_API_URL}/wheel/create`,{
+        segments : recoilSegmentArray
+      },{
+        headers : {
+          Authorization : localStorage.getItem("Authorization")
+        }
+      })
+  
+      localStorage.removeItem("recoil-persist")
+      navigate("/allwheels")
+    }catch(e){
+      console.log(e)
+    }finally{
+      setLoading(false);
+    }
+   
   }
 
   return (
